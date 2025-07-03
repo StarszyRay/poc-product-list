@@ -1,0 +1,22 @@
+.textInput {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  .input {
+    flex: 1;
+    &:read-only {
+      background-color: transparent;
+      border: none;
+      pointer-events: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .errorText {
+    flex-basis: 100%;
+    color: red;
+    margin: 0;
+    font-size: 14px;
+  }
+}
