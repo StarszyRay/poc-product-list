@@ -6,7 +6,6 @@ import styles from "./ProducstsList.module.css";
 const ProductsList = () => {
   const items = useSelector(selectAllProducts);
 
-  console.log("ProductsList rendered", items);
   return (
     <div>
       <h1>Products list</h1>
