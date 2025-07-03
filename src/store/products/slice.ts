@@ -30,7 +30,6 @@ const productsSlice = createSlice({
       const index = state.findIndex(
         (product) => product.id === updatedProduct.id
       );
-      console.log("index", index);
       if (index !== -1) {
         state[index] = updatedProduct;
       } else {
